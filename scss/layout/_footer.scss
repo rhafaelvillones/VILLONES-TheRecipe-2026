@@ -1,1 +1,20 @@
 @use "../abstract/" as *;
+
+.footer {
+  padding: 4rem 0;
+  color: $clr--dark;
+  &__wrapper {
+    @include centerAll;
+    flex-direction: column;
+  }
+  &__nav {
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      li a {
+        color: $clr--dark;
+      }
+    }
+  }
+}

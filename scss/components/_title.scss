@@ -1,1 +1,48 @@
 @use "../abstract/" as *;
+@use "../base/" as *;
+
+.title {
+  margin-bottom: 2rem;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  h4 {
+    color: $clr--primary;
+    font-family: $font-secondary;
+  }
+  &::after {
+    position: absolute;
+    display: inline-block;
+    content: " ";
+    background-color: $clr--primary;
+    width: 38rem;
+    height: 1px;
+    right: 0rem;
+    bottom: 1rem;
+    z-index: -9;
+  }
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: " ";
+    background-color: $clr--primary;
+    width: 38rem;
+    height: 1px;
+    left: 0rem;
+    bottom: 1rem;
+    z-index: -9;
+  }
+}
+.title__details {
+  h2 {
+    font-family: $font-secondary;
+    line-height: 4rem;
+    margin: 2rem 0;
+  }
+
+  small {
+    text-transform: uppercase;
+    color: $clr--primary;
+    letter-spacing: 1rem;
+  }
+}

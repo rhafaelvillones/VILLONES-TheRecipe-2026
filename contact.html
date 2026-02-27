@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheRecipe</title>
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="./home.html"><h2>TheRecipe</h2></a>
+          </div>
+          <nav class="header__nav">
+            <ul>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+          <div class="toggle__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- contact banner -->
+    <section class="banner bg--secondary">
+      <div class="container">
+        <div class="banner__wrapper">
+          <h1>Contact Us</h1>
+          <img src="./images/chicken.jpeg" alt="chicken" />
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form -->
+    <section class="contactDetail">
+      <div class="container">
+        <div class="title__details">
+          <h2>Let's talk about food</h2>
+        </div>
+        <div class="contactDetail__wrapper">
+          <div class="contactDetail__left">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+              quo temporibus at fuga maxime cum perferendis sint voluptatem modi
+              nisi!
+            </p>
+            <form action="contact.html">
+              <p>Name</p>
+              <input type="text" />
+              <p>Email</p>
+              <input type="text" />
+              <p>Phone</p>
+              <input type="number" />
+              <p>Message</p>
+              <textarea></textarea>
+              <button class="btn btn--primary">Send</button>
+            </form>
+          </div>
+          <div class="contactDetail__right">
+            <div class="contact-card">
+              <h4>Contact Info</h4>
+
+              <h5>Email</h5>
+              <span><i class="fa-solid fa-envelope"></i>
+              <p>info@therecipe.com</p></span>
+
+              <h5>Phone</h5>
+              <i class="fa-solid fa-phone"></i>
+              <p>1234 123 123</p>
+
+              <h5>Address</h5>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>
+                The Home of TheRecipe<br />
+                75 Ninth Avenue<br />
+                New York, NY 10011
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer bg--secondary">
+      <div class="container">
+        <div class="footer__wrapper">
+          <h3>TheRecipe</h3>
+          <nav class="footer__nav">
+            <ul>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+          <p>Copyright 2022 All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/togglemenu.js"></script>
+  </body>
+</html>

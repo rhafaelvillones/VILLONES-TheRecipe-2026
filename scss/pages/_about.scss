@@ -1,1 +1,30 @@
 @use "../abstract/" as *;
+@use "../base/" as *;
+
+.aboutContent {
+  padding: 18rem 0 4rem;
+  &__wrapper {
+    @include gridCustom(2fr 1fr, 4rem);
+  }
+  &__left {
+    h1 {
+    font-family: $font-secondary;
+    }
+    p {
+      text-align: justify;
+      padding: 1.5rem 0;
+    }
+    span p {
+      padding: 0;
+    }
+  }
+  &__right {
+    h3 {
+      font-family: $font-secondary;
+      color: $clr--primary;
+    }
+  }
+  .cardMini {
+    padding: 1rem 0;
+  }
+}

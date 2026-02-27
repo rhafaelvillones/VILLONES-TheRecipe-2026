@@ -1,2 +1,80 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
+
+.contactDetail {
+  padding: 15rem 0;
+  position: relative;
+  &__wrapper {
+    @include gridCustom(2fr 1fr, 4rem);
+  }
+  p {
+    padding-bottom: 3rem;
+  }
+  &__left {
+    form {
+      display: flex;
+      flex-direction: column;
+      p {
+        padding: 0;
+      }
+
+      input {
+        margin: 0.5rem 0 2rem;
+        width: 100%;
+        padding: 1rem;
+        background-color: transparent;
+        border: 1px solid $clr--dark;
+      }
+      textarea {
+        @extend input;
+        height: 10rem;
+      }
+      button {
+        width: 7rem;
+        text-transform: none;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+
+    .contact-card {
+      background-color: #d99a4a;
+      color: #fff;
+      padding: 3rem;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .contact-card h4 {
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+    }
+
+    .contact-item {
+      margin-bottom: 1.8rem;
+
+      span {
+        display: block;
+        font-size: 0.85rem;
+        opacity: 0.8;
+        margin-bottom: 0.4rem;
+      }
+
+      p {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.8rem;
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+
+      i {
+        margin-top: 0.2rem;
+      }
+    }
+  }
+}

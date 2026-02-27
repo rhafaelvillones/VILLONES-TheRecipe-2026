@@ -1,1 +1,49 @@
 @use "../abstract/" as *;
+@use "../base/" as *;
+
+.card {
+  width: 100%;
+  img {
+    width: 100%;
+    height: 30rem;
+    padding-bottom: 2rem;
+  }
+  &__details {
+    text-align: center;
+    small {
+      text-transform: uppercase;
+      color: $clr--primary;
+      letter-spacing: 1rem;
+    }
+    h4 {
+      font-family: $font-secondary;
+      padding: 2rem 0;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+}
+.cardMini {
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+  img {
+    width: 7rem;
+  }
+  &__details {
+    small {
+      text-transform: uppercase;
+      color: $clr--primary;
+      letter-spacing: 1rem;
+    }
+    h4 {
+      font-family: $font-secondary;
+      padding-top: .5rem;
+    }
+    ul i {
+      color: $clr--primary;
+      padding: 1rem 0;
+    }
+  }
+}

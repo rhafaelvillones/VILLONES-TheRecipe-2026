@@ -19,26 +19,4 @@
       transition: 0.5s ease;
     }
   }
-  &.btn--light {
-    background-color: $clr--light;
-    color: $clr--dark;
-    border: 1px solid $clr--dark;
-    &:hover {
-      background-color: $clr--dark;
-      color: $clr--light;
-      border: 1px solid $clr--light;
-      transition: 0.5s ease;
-    }
-  }
-  &.btn--dark {
-    background-color: $clr--dark;
-    color: $clr--light;
-    border: 1px solid $clr--light;
-    &:hover {
-      background-color: $clr--light;
-      color: $clr--dark;
-      border: 1px solid $clr--dark;
-      transition: 0.5s ease;
-    }
-  }
 }

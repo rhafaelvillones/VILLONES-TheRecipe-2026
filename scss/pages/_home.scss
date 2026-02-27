@@ -1,1 +1,120 @@
 @use "../abstract/" as *;
+@use "../base/" as *;
+
+.homeBanner {
+  padding: 4rem 0;
+  &__wrapper {
+    @include gridFixed(2, 4rem);
+    align-items: center;
+    @include mediaQuery(520px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+  .title__details {
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.homeRecipe {
+  padding: 4rem 0;
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.homeCollection {
+  padding: 4rem 0;
+  .title {
+    text-align: left;
+    &::after {
+      width: 77rem;
+    }
+    &::before {
+      display: none;
+    }
+  }
+  &__wrapper {
+    padding-bottom: 2rem;
+    @include gridFixed(2, 4rem);
+    align-items: center;
+
+    @include mediaQuery(520px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+  .title__details {
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.homeNewsletter {
+  padding: 4rem 0;
+  background-image:
+    linear-gradient(rgba(102, 102, 102, 0.5)),
+    url(../../images/bell_pepper.jpeg);
+  background-size: cover;
+  &__wrapper{
+    padding: 6rem 0;
+  }
+  &__text {
+    color: $clr--light;
+    text-align: center;
+    h2 {
+      font-family: $font-secondary;
+      padding-bottom: 2rem;
+    }
+    p {
+      padding-bottom: 2rem;
+    }
+  }
+
+  .subscribe {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 auto;
+    input {
+      flex: 1;
+      padding: 15px 20px;
+      border: none;
+      font-size: 16px;
+      outline: none;
+      background: $clr--light;
+    }
+    button {
+      padding: 0 30px;
+      border: none;
+      background: $clr--primary;
+      font-size: 16px;
+      margin: 0 auto;
+      color: $clr--light;
+    }
+  }
+}
+
+.homeClassic{
+  padding: 4rem 0;
+  .title {
+    text-align: left;
+    &::after {
+      width: 77rem;
+    }
+    &::before {
+      display: none;
+    }
+  }
+  &__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -20,6 +20,9 @@
     right: 0rem;
     bottom: 1rem;
     z-index: -9;
+    @include mediaQuery(520px) {
+      width: 3.5rem;
+    }
   }
   &::before {
     position: absolute;
@@ -31,6 +34,9 @@
     left: 0rem;
     bottom: 1rem;
     z-index: -9;
+    @include mediaQuery(520px) {
+      width: 3.5rem;
+    }
   }
 }
 .title__details {

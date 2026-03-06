@@ -4,6 +4,9 @@
 .header {
   padding: 3rem 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  z-index: 99;
+  background-color: #fff;
   &__wrapper {
     @include between;
   }

@@ -1499,6 +1499,11 @@ img {
   bottom: 1rem;
   z-index: -9;
 }
+@media screen and (max-width: 520px) {
+  .title::after {
+    width: 3.5rem;
+  }
+}
 .title::before {
   position: absolute;
   display: inline-block;
@@ -1509,6 +1514,11 @@ img {
   left: 0rem;
   bottom: 1rem;
   z-index: -9;
+}
+@media screen and (max-width: 520px) {
+  .title::before {
+    width: 3.5rem;
+  }
 }
 
 .title__details h2 {
@@ -1543,6 +1553,9 @@ img {
 .header {
   padding: 3rem 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  z-index: 99;
+  background-color: #fff;
 }
 .header__wrapper {
   display: flex;
@@ -1653,8 +1666,12 @@ img {
 }
 @media screen and (max-width: 520px) {
   .homeBanner__wrapper {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
     text-align: center;
+    margin-top: 8rem;
+    gap: 2rem;
   }
 }
 .homeBanner .title__details p {
@@ -1669,6 +1686,11 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1.5rem;
 }
+@media screen and (max-width: 520px) {
+  .homeRecipe__cards {
+    grid-template-columns: 1fr;
+  }
+}
 
 .homeCollection {
   padding: 4rem 0;
@@ -1678,6 +1700,11 @@ img {
 }
 .homeCollection .title::after {
   width: 77rem;
+}
+@media screen and (max-width: 520px) {
+  .homeCollection .title::after {
+    width: 8rem;
+  }
 }
 .homeCollection .title::before {
   display: none;

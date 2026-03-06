@@ -7,8 +7,12 @@
     @include gridFixed(2, 4rem);
     align-items: center;
     @include mediaQuery(520px) {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
       text-align: center;
+      margin-top: 8rem;
+      gap: 2rem;
     }
   }
   .title__details {
@@ -24,6 +28,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1.5rem;
+    @include mediaQuery(520px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
@@ -33,6 +40,9 @@
     text-align: left;
     &::after {
       width: 77rem;
+      @include mediaQuery(520px) {
+        width: 8rem;
+      }
     }
     &::before {
       display: none;
@@ -61,7 +71,7 @@
     linear-gradient(rgba(102, 102, 102, 0.5)),
     url(../../images/bell_pepper.jpeg);
   background-size: cover;
-  &__wrapper{
+  &__wrapper {
     padding: 6rem 0;
   }
   &__text {
@@ -102,7 +112,7 @@
   }
 }
 
-.homeClassic{
+.homeClassic {
   padding: 4rem 0;
   .title {
     text-align: left;
@@ -113,7 +123,7 @@
       display: none;
     }
   }
-  &__wrapper{
+  &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
